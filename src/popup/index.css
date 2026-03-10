@@ -165,8 +165,34 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica N
 .success-sub{color:var(--t3)!important}
 .error-state p{color:var(--err)!important;font-size:13px!important;text-align:center;line-height:1.5}
 
-/* ===== Footer ===== */
-.footer{display:flex;align-items:center;justify-content:center;padding:14px 0;font-size:11px;color:var(--t3);margin-top:auto;opacity:.6}
+/* ===== Footer & About Panel ===== */
+.footer{display:flex;align-items:center;justify-content:center;margin-top:auto}
+.about-trigger{display:flex;align-items:center;gap:6px;background:transparent;border:none;cursor:pointer;font-family:inherit;font-size:11px;color:var(--t3);padding:14px 0;opacity:.6;transition:opacity .2s}
+.about-trigger:hover{opacity:1}
+.about-ver{font-size:10px;background:var(--input);padding:1px 6px;border-radius:4px;color:var(--t3);font-weight:600}
+.about-overlay{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;animation:fadeIn .2s ease;padding:16px}
+.about-card{width:100%;max-width:360px;background:var(--bg2);border-radius:20px;padding:24px;box-shadow:var(--shadow-lg);animation:slideDown .25s ease;display:flex;flex-direction:column;gap:16px;max-height:90vh;overflow-y:auto}
+.about-header{display:flex;align-items:center;gap:12px}
+.about-logo{width:48px;height:48px;border-radius:14px;border:2px solid var(--accent-glow);box-shadow:0 0 16px var(--accent-glow)}
+.about-title{font-size:18px;font-weight:800;color:var(--t1);letter-spacing:-.3px}
+.about-version{font-size:11px;background:var(--accent-light);color:var(--accent);padding:2px 8px;border-radius:6px;font-weight:700}
+.about-close{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--bg);cursor:pointer;font-size:14px;color:var(--t3);display:flex;align-items:center;justify-content:center;transition:all .2s;margin-left:auto;flex-shrink:0}
+.about-close:hover{color:var(--err);border-color:var(--err);background:rgba(231,76,60,.08)}
+.about-desc{font-size:13px;color:var(--t2);line-height:1.6}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.about-feat{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--bg3);border-radius:10px;font-size:11px;color:var(--t2);font-weight:500;border:1px solid var(--border)}
+.about-feat i{color:var(--accent);font-size:13px;flex-shrink:0}
+.about-github-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;background:var(--gradient);color:#fff;border-radius:12px;font-size:14px;font-weight:700;font-family:inherit;text-decoration:none;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(108,92,231,.3);transition:all .25s;position:relative;overflow:hidden}
+.about-github-btn:hover{box-shadow:0 6px 24px rgba(108,92,231,.4);transform:translateY(-2px)}
+.about-github-btn:active{transform:translateY(0)}
+.about-github-btn .fa-brands{font-size:18px}
+.about-star-icon{animation:starPulse 2s ease-in-out infinite}
+@keyframes starPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.3)}}
+.about-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.about-links a{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--t3);text-decoration:none;transition:color .2s;font-weight:500}
+.about-links a:hover{color:var(--accent)}
+.about-links a i{font-size:13px}
+.about-credits{font-size:11px;color:var(--t3);text-align:center;opacity:.7}
 
 .diagram-block{margin:10px 0;text-align:center;background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:14px;overflow-x:auto}
 .diagram-block img{max-width:100%;height:auto}

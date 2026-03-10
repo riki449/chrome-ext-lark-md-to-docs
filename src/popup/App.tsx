@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { AboutPanel } from './components/AboutPanel';
 import { DropZone } from './components/DropZone';
 import { Header } from './components/Header';
 import { PasteZone } from './components/PasteZone';
@@ -145,7 +146,7 @@ export default function App() {
         />
       )}
 
-      <footer className="footer"><span>{t('footer.text')}</span></footer>
+      <AboutPanel />
     </div>
   );
 }

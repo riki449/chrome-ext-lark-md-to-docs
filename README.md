@@ -49,7 +49,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/user/chrome-ext-lark-md-to-docs.git
+   git clone https://github.com/riki449/chrome-ext-lark-md-to-docs.git
    cd chrome-ext-lark-md-to-docs
    ```
 
@@ -244,5 +244,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/user">Mobio</a>
+  Made with ❤️ by <a href="https://github.com/riki449">riki449</a>
 </p>

@@ -62,8 +62,16 @@ const messages: Record<Locale, Record<string, string>> = {
     'settings.firstLineTitle': 'First line as title',
     'settings.language': 'Language',
 
-    // Footer
+    // Footer & About
     'footer.text': 'MD → Lark Docs Converter',
+    'about.desc': 'Convert Markdown files into beautiful Lark documents with one click. Supports diagrams, images, and more.',
+    'about.feat1': 'Import .md files or paste directly',
+    'about.feat2': 'Mermaid & PlantUML diagrams',
+    'about.feat3': 'Auto-embed external images',
+    'about.feat4': 'English, Tiếng Việt, 中文',
+    'about.starCta': 'Star on GitHub to support us!',
+    'about.report': 'Report Bug',
+    'about.credits': 'Made with ❤️ — Open Source & Free Forever',
 
     // Toast (background)
     'toast.title': 'Open a Lark document first',
@@ -112,6 +120,14 @@ const messages: Record<Locale, Record<string, string>> = {
     'settings.language': 'Ngôn ngữ',
 
     'footer.text': 'Chuyển đổi MD → Lark Docs',
+    'about.desc': 'Chuyển đổi file Markdown thành tài liệu Lark chỉ với một cú nhấp. Hỗ trợ biểu đồ, hình ảnh và nhiều hơn nữa.',
+    'about.feat1': 'Import file .md hoặc dán trực tiếp',
+    'about.feat2': 'Biểu đồ Mermaid & PlantUML',
+    'about.feat3': 'Tự động nhúng hình ảnh',
+    'about.feat4': 'English, Tiếng Việt, 中文',
+    'about.starCta': 'Cho sao trên GitHub để ủng hộ!',
+    'about.report': 'Báo lỗi',
+    'about.credits': 'Làm với ❤️ — Mã nguồn mở & Miễn phí mãi mãi',
 
     'toast.title': 'Hãy mở tài liệu Lark trước',
     'toast.sub': 'Truy cập larksuite.com và mở một tài liệu, sau đó nhấn extension.',
@@ -159,6 +175,14 @@ const messages: Record<Locale, Record<string, string>> = {
     'settings.language': '语言',
 
     'footer.text': 'MD → Lark Docs 转换器',
+    'about.desc': '一键将Markdown文件转换为精美的Lark文档。支持图表、图片等。',
+    'about.feat1': '导入 .md 文件或直接粘贴',
+    'about.feat2': 'Mermaid & PlantUML 图表',
+    'about.feat3': '自动嵌入外部图片',
+    'about.feat4': 'English, Tiếng Việt, 中文',
+    'about.starCta': '在GitHub上给星支持我们！',
+    'about.report': '报告错误',
+    'about.credits': '用 ❤️ 制作 — 开源且永久免费',
 
     'toast.title': '请先打开Lark文档',
     'toast.sub': '访问 larksuite.com 并打开文档，然后再点击扩展。',
