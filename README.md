@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/icons/icon-128.png" width="96" alt="MD to Lark Docs" />
+  <img src="public/icons/icon-256.png" width="96" alt="MD to Lark Docs" />
 </p>
 
 <h1 align="center">MD to Lark Docs</h1>
