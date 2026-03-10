@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useI18n } from '../i18n';
 
 const GITHUB_URL = 'https://github.com/riki449/chrome-ext-lark-md-to-docs';
-const VERSION = '1.2.0';
+const VERSION = '1.0.0';
 
 export function AboutPanel() {
   const [open, setOpen] = useState(false);
