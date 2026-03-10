@@ -16,6 +16,7 @@ export default function App() {
     localStorage.getItem('md2lark_first_line_title') !== 'false',
   );
   const pasteRef = useRef<HTMLTextAreaElement>(null);
+  const [showAbout, setShowAbout] = useState(false);
   const {
     status, fileName, htmlPreview, error, progress, insertMethod, mdContent,
     isDragging, mode, fileRef, stats, diagramMode, previewHtmlRef,
@@ -82,6 +83,7 @@ export default function App() {
         onDiagramModeChange={setDiagramMode}
         useFirstLineTitle={useFirstLineTitle}
         onUseFirstLineTitleChange={handleFirstLineTitleChange}
+        onShowAbout={() => setShowAbout(true)}
       />
 
       {showMain && (
@@ -146,7 +148,7 @@ export default function App() {
         />
       )}
 
-      <AboutPanel />
+      <AboutPanel open={showAbout} onToggle={setShowAbout} />
     </div>
   );
 }

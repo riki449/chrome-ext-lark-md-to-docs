@@ -10,12 +10,14 @@ interface HeaderProps {
   onDiagramModeChange: (mode: DiagramMode) => void;
   useFirstLineTitle: boolean;
   onUseFirstLineTitleChange: (v: boolean) => void;
+  onShowAbout: () => void;
 }
 
 export function Header({
   theme, onThemeChange,
   diagramMode, onDiagramModeChange,
   useFirstLineTitle, onUseFirstLineTitleChange,
+  onShowAbout,
 }: HeaderProps) {
   const { t } = useI18n();
 
@@ -36,6 +38,7 @@ export function Header({
           onDiagramModeChange={onDiagramModeChange}
           useFirstLineTitle={useFirstLineTitle}
           onUseFirstLineTitleChange={onUseFirstLineTitleChange}
+          onShowAbout={onShowAbout}
         />
         <button className="close-btn" onClick={() => {
           if (window.parent !== window) {

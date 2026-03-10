@@ -72,6 +72,7 @@ const messages: Record<Locale, Record<string, string>> = {
     'about.starCta': 'Star on GitHub to support us!',
     'about.report': 'Report Bug',
     'about.credits': 'Made with ❤️ — Open Source & Free Forever',
+    'about.info': 'About',
 
     // Toast (background)
     'toast.title': 'Open a Lark document first',
@@ -128,6 +129,7 @@ const messages: Record<Locale, Record<string, string>> = {
     'about.starCta': 'Cho sao trên GitHub để ủng hộ!',
     'about.report': 'Báo lỗi',
     'about.credits': 'Làm với ❤️ — Mã nguồn mở & Miễn phí mãi mãi',
+    'about.info': 'Thông tin',
 
     'toast.title': 'Hãy mở tài liệu Lark trước',
     'toast.sub': 'Truy cập larksuite.com và mở một tài liệu, sau đó nhấn extension.',
@@ -183,6 +185,7 @@ const messages: Record<Locale, Record<string, string>> = {
     'about.starCta': '在GitHub上给星支持我们！',
     'about.report': '报告错误',
     'about.credits': '用 ❤️ 制作 — 开源且永久免费',
+    'about.info': '关于',
 
     'toast.title': '请先打开Lark文档',
     'toast.sub': '访问 larksuite.com 并打开文档，然后再点击扩展。',

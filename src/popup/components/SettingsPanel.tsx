@@ -10,6 +10,7 @@ interface SettingsPanelProps {
   onDiagramModeChange: (mode: DiagramMode) => void;
   useFirstLineTitle: boolean;
   onUseFirstLineTitleChange: (v: boolean) => void;
+  onShowAbout: () => void;
 }
 
 const THEME_ICONS: Record<Theme, string> = {
@@ -24,6 +25,7 @@ export function SettingsPanel({
   theme, onThemeChange,
   diagramMode, onDiagramModeChange,
   useFirstLineTitle, onUseFirstLineTitleChange,
+  onShowAbout,
 }: SettingsPanelProps) {
   const { t, locale, setLocale } = useI18n();
   const [open, setOpen] = useState(false);
@@ -151,6 +153,16 @@ export function SettingsPanel({
             <div className={`settings-switch ${useFirstLineTitle ? 'on' : ''}`}>
               <div className="settings-switch-dot" />
             </div>
+          </button>
+
+          <div className="settings-divider" />
+
+          <button
+            className="settings-option"
+            onClick={() => { closeAll(); onShowAbout(); }}
+          >
+            <i className="fa-solid fa-circle-info settings-opt-icon" />
+            <span>{t('about.info')}</span>
           </button>
         </div>
       )}
